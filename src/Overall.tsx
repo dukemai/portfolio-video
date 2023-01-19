@@ -45,7 +45,7 @@ const Stat = ({
 
 	return (
 		<div
-			className="flex items-center border-t-2 border-green-500 py-6 px-4 relative"
+			className="flex items-center border-t-2 border-green-500 px-4 relative"
 			style={{transform: `translateY(${offset}px)`, opacity}}
 		>
 			{children}
@@ -174,8 +174,8 @@ const Overall: FunctionComponent = () => {
 	});
 
 	return (
-		<Layout>
-			<div className="grid grid-rows-5">
+		<Layout showTitle>
+			<div className="grid grid-rows-5 bg-lime-200 grid-cols-1">
 				{data[0].data.map((device, i) => {
 					// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 					// @ts-ignore
